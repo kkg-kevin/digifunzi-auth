@@ -38,7 +38,7 @@ export default function App() {
             <h2 className="text-center text-3xl font-extrabold tracking-tight text-brand-ink sm:text-4xl md:text-5xl">
               Sign in to your account
             </h2>
-            <p className="mt-2.5 text-center text-base text-slate-500 sm:mt-3 sm:text-lg">Welcome back to DigiFunzi.</p>
+            <p className="mt-2.5 text-center text-base text-slate-500 sm:mt-3 sm:text-lg">Welcome back to Digifunzi.</p>
 
             <form className="mt-6 space-y-4.5 sm:mt-8 sm:space-y-5" onSubmit={(event) => event.preventDefault()}>
               <div>
@@ -90,7 +90,7 @@ export default function App() {
             </form>
 
             <p className="mt-6 text-center text-sm text-slate-600 sm:mt-7 sm:text-lg">
-              New to DigiFunzi?{" "}
+              New to Digifunzi?{" "}
               <a href="#" className="font-extrabold text-brand-blue hover:underline">
                 Sign up
               </a>
@@ -100,7 +100,7 @@ export default function App() {
       </div>
 
       <p className="pointer-events-none absolute bottom-3 left-1/2 hidden -translate-x-1/2 text-center text-xs text-slate-500 sm:bottom-5 sm:block sm:text-base">
-        &copy; 2026 DigiFunzi
+        &copy; 2026 Digifunzi
       </p>
     </div>
   );
