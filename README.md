@@ -33,17 +33,26 @@ digifunzi-auth/
 
 ## Getting Started
 
-### 1. Install dependencies
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kkg-kevin/digifunzi-auth.git
+cd digifunzi-auth
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Run development server
+### 3. Run development server
 
 ```bash
 npm run dev
 ```
+
+**Important**: Make sure you're in the `digifunzi-auth` directory before running npm commands.
 
 ### 3. Build for production
 
