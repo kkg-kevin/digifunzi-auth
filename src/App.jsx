@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LogoKids from "../Logo-kids.png";
 
 function EyeIcon({ show }) {
   if (show) {
@@ -26,6 +27,13 @@ export default function App() {
       <div className="pointer-events-none absolute -left-20 top-0 h-56 w-56 rounded-full bg-brand-blue/20 blur-3xl sm:h-72 sm:w-72"></div>
       <div className="pointer-events-none absolute -right-16 bottom-0 h-56 w-56 rounded-full bg-brand-orange/25 blur-3xl sm:h-72 sm:w-72"></div>
 
+      {/* Decorative kids images — show left and right halves of the image */}
+      <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-0 hidden md:block w-1/3 overflow-hidden">
+        <img src={LogoKids} alt="" className="h-full w-full object-cover object-left" />
+      </div>
+      <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-0 hidden md:block w-1/3 overflow-hidden">
+        <img src={LogoKids} alt="" className="h-full w-full object-cover object-right" style={{ transform: "scaleX(-1)" }} />
+      </div>
       <div className="relative z-10 mx-auto flex w-full max-w-3xl overflow-hidden rounded-3xl bg-white shadow-soft sm:rounded-[2rem]">
         <main className="flex w-full items-center px-5 py-8 sm:px-8 sm:py-10 md:px-10 lg:px-12">
           <div className="mx-auto w-full max-w-[520px]">
@@ -38,6 +46,7 @@ export default function App() {
             <h2 className="text-center text-3xl font-extrabold tracking-tight text-brand-ink sm:text-4xl md:text-5xl">
               Sign in to your account
             </h2>
+            
             <p className="mt-2.5 text-center text-base text-slate-500 sm:mt-3 sm:text-lg">Welcome back to Digifunzi.</p>
 
             <form className="mt-6 space-y-4.5 sm:mt-8 sm:space-y-5" onSubmit={(event) => event.preventDefault()}>
